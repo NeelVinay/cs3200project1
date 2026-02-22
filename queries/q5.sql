@@ -11,4 +11,3 @@ FROM Publication p
 LEFT JOIN Contribution c ON p.publication_id = c.publication_id
 GROUP BY p.publication_id, p.title
 ORDER BY contribution_count DESC;
-
